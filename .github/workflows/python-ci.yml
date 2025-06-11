@@ -27,7 +27,7 @@ jobs:
         run: ruff check . || true
 
       - name: Format check with black
-        run: black --check cockroachdb-mcp-client
+        run: black --check cockroachdb_mcp_client
 
       - name: Run tests
         run: pytest tests/
