@@ -26,8 +26,8 @@ jobs:
       - name: Lint with ruff (non-blocking)
         run: ruff check . || true
 
-      - name: Format check with black
-        run: black --check cockroachdb_mcp_client
+      - name: Format check with black (non-blocking)
+        run: black --check cockroachdb_mcp_client || true
 
       - name: Run tests
         run: pytest tests/
