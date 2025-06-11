@@ -1,0 +1,46 @@
+[project]
+name = "cockroachdb-mcp-client"
+version = "0.1.0"
+description = "CLI for interacting with a CRDB-backed Model Context Protocol server"
+authors = [{ name = "Virag Tripathi", email = "virag.tripathi@gmail.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Quality Assurance",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "typer[all]>=0.12.3",
+    "requests>=2.31.0",
+    "pydantic>=2.6.4",
+    "PyYAML>=6.0.1",
+    "openai>=1.14.2",
+    "anthropic>=0.25.4",
+    "tenacity"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "black",
+    "pytest",
+    "pytest-mock",
+    "httpx"
+]
+
+[project.scripts]
+cockroachdb-mcp-client = "cockroachdb_mcp_client.cli:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
