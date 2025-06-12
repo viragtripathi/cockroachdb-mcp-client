@@ -1,9 +1,9 @@
 # cockroachdb-mcp-client
 
-![PyPI](https://img.shields.io/pypi/v/cockroachdb-mcp-client)
-![Python](https://img.shields.io/pypi/pyversions/cockroachdb-mcp-client)
-![License](https://img.shields.io/github/license/viragtripathi/cockroachdb-mcp-client)
-![CI](https://github.com/viragtripathi/cockroachdb-mcp-client/actions/workflows/python-ci.yml/badge.svg)
+[![PyPI](https://img.shields.io/pypi/v/cockroachdb-mcp-client)](https://pypi.org/project/cockroachdb-mcp-client/)
+[![Python](https://img.shields.io/pypi/pyversions/cockroachdb-mcp-client)](https://pypi.org/project/cockroachdb-mcp-client/)
+[![License](https://img.shields.io/github/license/viragtripathi/cockroachdb-mcp-client)](https://github.com/viragtripathi/cockroachdb-mcp-client/blob/main/LICENSE)
+[![CI](https://github.com/viragtripathi/cockroachdb-mcp-client/actions/workflows/python-ci.yml/badge.svg)](https://github.com/viragtripathi/cockroachdb-mcp-client/actions)
 
 A developer-friendly, model-provider-agnostic CLI tool for working with [Model Context Protocol](https://modelcontextprotocol.io) servers — built specifically for use with [CockroachDB](https://www.cockroachlabs.com/) backends.
 
